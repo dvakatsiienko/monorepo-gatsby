@@ -1,0 +1,30 @@
+{
+    "name": "lerna-monorepo-starter",
+    "version": "0.0.1",
+    "license": "MIT",
+    "scripts": {
+        "dev": "gatsby develop",
+        "build": "gatsby build",
+        "test": "jest test --config ./json-config.json"
+    },
+    "dependencies": {
+        "gatsby": "3.2.1",
+        "gatsby-plugin-react-helmet": "4.2.0",
+        "gatsby-source-filesystem": "3.2.0",
+        "gatsby-transformer-json": "3.2.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-helmet": "6.1.0",
+        "serve": "11.3.2",
+        "styled-components": "5.2.3"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "7.13.12",
+        "@babel/preset-react": "7.13.13",
+        "babel-jest": "26.6.3",
+        "enzyme": "3.11.0",
+        "enzyme-adapter-react-16": "1.15.6",
+        "gatsby-plugin-styled-components": "4.2.0",
+        "scripty": "2.0.0"
+    }
+}
