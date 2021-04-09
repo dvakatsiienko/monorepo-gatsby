@@ -1,9 +1,0 @@
-{
-    "type": "static",
-    "alias": "@gatsby-monorepo/shop",
-    "static": {
-        "public": "public"
-    },
-    "public": true,
-    "version": 1
-}
