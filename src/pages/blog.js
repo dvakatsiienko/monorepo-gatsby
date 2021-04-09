@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import { ItemCard, ItemCardWrapper } from '../components/ItemCard';
+import { ItemCard, ItemCardWrapper } from '../../packages/shared-ui';
 
 const BlogPage = ({ data }) => {
     const edges = data.allBlogJson.edges;

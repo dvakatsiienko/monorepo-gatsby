@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { ItemCard, ItemCardWrapper } from '../components/ItemCard';
+import { ItemCard, ItemCardWrapper } from '../../packages/shared-ui';
 
 const IndexPage = ({ data }) => {
     const edges = data.allShoppingJson.edges;

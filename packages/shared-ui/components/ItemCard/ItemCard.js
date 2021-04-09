@@ -4,22 +4,22 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 const Card = styled.div`
-  background: ${theme.white};
-  border-radius: 3px;
-  border: 1px solid ${theme.lightGrey};
-  color: ${theme.black};
-  display: grid;
-  margin: 1%;
-  padding: 5px;
-  cursor: pointer;
-  transition: all 150ms ease-in
-  width: 30%;
-  
-  &:hover {
-    position: relative;
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.25);
-  }
+    background: ${theme.white};
+    border-radius: 3px;
+    border: 1px solid ${theme.lightGrey};
+    color: ${theme.black};
+    display: grid;
+    margin: 1%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    width: 30%;
+
+    &:hover {
+        position: relative;
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.25);
+    }
 `;
 
 const StyledLink = styled(Link)`

@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 
-import Button from '../components/Button';
+import { Button } from '../../packages/shared-ui';
 
-const ShoppingItem = ({ pathContext: { data } }) => {
+const ShoppingItem = ({ pageContext: { data } }) => {
     if (!data) {
         return null;
     }

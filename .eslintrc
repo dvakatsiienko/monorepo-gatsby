@@ -1,0 +1,4 @@
+{
+    "parser": "babel-eslint",
+    "rules": { "ident": [1, 4] }
+}
