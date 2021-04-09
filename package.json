@@ -11,6 +11,12 @@
         "run:blog": "yarn workspace @gatsby-monorepo/blog run dev",
         "run:shop": "yarn workspace @gatsby-monorepo/shop run dev",
         "run:all": "run-p -l run:blog run:shop",
+        "build:blog": "yarn workspace @gatsby-monorepo/blog run build",
+        "build:shop": "yarn workspace @gatsby-monorepo/shop run build",
+        "build:all": "run-p -l build:blog build:shop",
+        "start:blog": "yarn workspace @gatsby-monorepo/blog run start",
+        "start:shop": "yarn workspace @gatsby-monorepo/shop run start",
+        "start:all": "run-p -l start:blog start:shop",
         "build": "gatsby build",
         "test": "jest test --config ./json-config.json"
     },

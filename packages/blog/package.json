@@ -3,8 +3,8 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
-        "dev": "gatsby develop",
-        "start": "gatsby serve",
+        "dev": "gatsby develop -p 8000",
+        "start": "gatsby serve -p 9000",
         "build": "gatsby build"
     },
     "dependencies": {
