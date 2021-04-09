@@ -18,4 +18,4 @@ matrix:
 script:
     - cd $PACKAGE_LOCATION
     - yarn test
-    - yarn build:all
+    - yarn build
