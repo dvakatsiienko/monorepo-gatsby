@@ -25,3 +25,5 @@ deploy:
     script: now public --token $VERCEL_TOKEN
     skip_cleanup: true
     app: $PACKAGE_NAME
+    on:
+        branch: main
