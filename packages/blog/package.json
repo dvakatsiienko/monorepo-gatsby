@@ -3,9 +3,9 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
-        "start": "serve public/",
-        "build": "gatsby build",
-        "develop": "gatsby develop"
+        "dev": "gatsby develop",
+        "start": "gatsby serve",
+        "build": "gatsby build"
     },
     "dependencies": {
         "@gatsby-monorepo/shared-ui": "0.0.1",
@@ -19,7 +19,6 @@
         "react": "17.0.2",
         "react-helmet": "6.1.0",
         "react-router-dom": "5.2.0",
-        "serve": "11.3.2",
         "styled-components": "5.2.3"
     }
 }
