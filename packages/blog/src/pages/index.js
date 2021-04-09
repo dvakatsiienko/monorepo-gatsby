@@ -4,12 +4,12 @@ import { graphql } from 'gatsby';
 /* Components */
 import { ItemCard, ItemCardWrapper } from '@gatsby-monorepo/shared-ui';
 
-const BlogPage = ({ data }) => {
+const PaperdonPage = ({ data }) => {
     const edges = data.allBlogJson.edges;
 
     return (
         <div>
-            <h1>Blog: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
+            <h1>Paperdon: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
             <ItemCardWrapper>
                 {edges &&
                     edges.map(edge => (
@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
                     ))}
             </ItemCardWrapper>
             <a href={process.env.GATSBY_SHOP_URL} rel="noreferrer noopener">
-                Go to Shop
+                Go to Edusson
             </a>
         </div>
     );
@@ -40,4 +40,4 @@ export const query = graphql`
     }
 `;
 
-export default BlogPage;
+export default PaperdonPage;
