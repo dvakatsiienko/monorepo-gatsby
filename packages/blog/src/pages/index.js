@@ -1,5 +1,5 @@
 /* Core */
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 /* Components */
 import { ItemCard, ItemCardWrapper } from '@gatsby-monorepo/shared-ui';
@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
 
     return (
         <div>
-            <h1>Blog Page</h1>
+            <h1>Blog: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
             <ItemCardWrapper>
                 {edges &&
                     edges.map(edge => (
@@ -20,7 +20,11 @@ const BlogPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <Link to="/">Go back to the shop</Link>
+            <a
+                href={`http://${process.env.GATSBY_SHOP_URL}`}
+                rel="noreferrer noopener">
+                Go to Shop
+            </a>
         </div>
     );
 };

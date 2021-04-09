@@ -10,7 +10,7 @@
         "dev": "gatsby develop",
         "run:blog": "yarn workspace @gatsby-monorepo/blog run dev",
         "run:shop": "yarn workspace @gatsby-monorepo/shop run dev",
-        "run:all": "npm-run-all --parallel run:blog run:shop",
+        "run:all": "run-p -l run:blog run:shop",
         "build": "gatsby build",
         "test": "jest test --config ./json-config.json"
     },
@@ -28,6 +28,7 @@
         "@babel/preset-react": "7.13.13",
         "babel-jest": "26.6.3",
         "babel-preset-gatsby": "1.2.0",
+        "dotenv": "8.2.0",
         "enzyme": "3.11.0",
         "enzyme-adapter-react-16": "1.15.6",
         "gatsby-plugin-styled-components": "4.2.0",

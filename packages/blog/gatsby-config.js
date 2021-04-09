@@ -1,3 +1,11 @@
+/* Core */
+const dotenv = require('dotenv');
+
+const activeEnv = process.env.ACTIVE_ENV || 'development';
+
+dotenv.config({ path: `.env.${activeEnv}` });
+dotenv.config({ path: '../../.env' });
+
 module.exports = {
     siteMetadata: {
         title: 'Blog',

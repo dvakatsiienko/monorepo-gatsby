@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
 
     return (
         <div>
-            <h1>Hi people</h1>
+            <h1>Shop: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
             <ItemCardWrapper>
                 {edges &&
                     edges.map(edge => (
@@ -20,7 +20,11 @@ const IndexPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <a href={`http://${process.env.BLOG_URL}`}>Go to Blog</a>
+            <a
+                href={`http://${process.env.GATSBY_BLOG_URL}`}
+                rel="noreferrer noopener">
+                Go to Blog
+            </a>
         </div>
     );
 };
