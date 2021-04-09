@@ -1,6 +1,8 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { ItemCard, ItemCardWrapper } from '../../packages/shared-ui';
+/* Core */
+import { graphql } from 'gatsby';
+
+/* Components */
+import { ItemCard, ItemCardWrapper } from '@gatsby-monorepo/shared-ui';
 
 const IndexPage = ({ data }) => {
     const edges = data.allShoppingJson.edges;
@@ -18,7 +20,7 @@ const IndexPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <Link to="/blog/">Go to Blog</Link>
+            <a href={`http://${process.env.BLOG_URL}`}>Go to Blog</a>
         </div>
     );
 };
@@ -35,4 +37,5 @@ export const query = graphql`
         }
     }
 `;
+
 export default IndexPage;

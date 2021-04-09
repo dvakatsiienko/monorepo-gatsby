@@ -1,6 +1,8 @@
-import React from 'react';
+/* Core */
 import { graphql, Link } from 'gatsby';
-import { ItemCard, ItemCardWrapper } from '../../packages/shared-ui';
+
+/* Components */
+import { ItemCard, ItemCardWrapper } from '@gatsby-monorepo/shared-ui';
 
 const BlogPage = ({ data }) => {
     const edges = data.allBlogJson.edges;

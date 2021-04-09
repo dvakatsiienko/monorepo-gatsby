@@ -6,18 +6,18 @@ import { Header } from '../..';
 
 import './index.css';
 
-const Layout = ({ children }) => {
-    const data = useStaticQuery(
-        graphql`
-            query SiteTitleQuery {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
-        `,
-    );
+const Layout = ({ children, data }) => {
+    // const data = useStaticQuery(
+    //     graphql`
+    //         query SiteTitleQuery {
+    //             site {
+    //                 siteMetadata {
+    //                     title
+    //                 }
+    //             }
+    //         }
+    //     `,
+    // );
 
     const title = data?.site?.siteMetadata?.title ?? 'TEST';
 

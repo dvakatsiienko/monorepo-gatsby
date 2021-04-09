@@ -1,11 +1,11 @@
+/* Core */
 import { Link } from 'gatsby';
 
-import { Button } from '../../packages/shared-ui';
+/* Components */
+import { Button } from '@gatsby-monorepo/shared-ui';
 
 const ShoppingItem = ({ pageContext: { data } }) => {
-    if (!data) {
-        return null;
-    }
+    if (!data) return null;
 
     return (
         <div>
