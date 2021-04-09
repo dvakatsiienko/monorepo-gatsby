@@ -10,12 +10,18 @@ install:
 
 matrix:
     include:
-        - name: 'Blog Pipeline'
-          env: PACKAGE_LOCATION=packages/blog
-        - name: 'Shop Pipeline'
-          env: PACKAGE_LOCATION=packages/shop
+        - name: Blog Pipeline
+          env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=@gatsby-monorepo/blog
+        - name: Shop Pipeline
+          env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=@gatsby-monorepo/shop
 
 script:
     - cd $PACKAGE_LOCATION
     - yarn test
     - yarn build
+
+deploy:
+    provider: script
+    script: now public --token $VERCEL_TOKEN
+    skip_cleanup: true
+    app: $PACKAGE_NAME
