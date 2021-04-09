@@ -15,7 +15,6 @@
         "test": "jest test --config ./json-config.json"
     },
     "dependencies": {
-        "gatsby": "3.2.1",
         "gatsby-plugin-react-helmet": "4.2.0",
         "gatsby-source-filesystem": "3.2.0",
         "gatsby-transformer-json": "3.2.0",
