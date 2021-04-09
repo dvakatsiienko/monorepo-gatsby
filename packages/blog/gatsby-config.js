@@ -7,6 +7,9 @@ const activeEnv =
 dotenv.config({ path: `.env.${activeEnv}` });
 dotenv.config({ path: '../../.env' });
 
+console.log('Blog', activeEnv);
+console.log('Blog', process.env.GATSBY_BLOG_URL);
+
 module.exports = {
     siteMetadata: {
         title: 'Blog',

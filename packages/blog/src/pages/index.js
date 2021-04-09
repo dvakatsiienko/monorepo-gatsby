@@ -20,9 +20,7 @@ const BlogPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <a
-                href={`http://${process.env.GATSBY_SHOP_URL}`}
-                rel="noreferrer noopener">
+            <a href={process.env.GATSBY_SHOP_URL} rel="noreferrer noopener">
                 Go to Shop
             </a>
         </div>

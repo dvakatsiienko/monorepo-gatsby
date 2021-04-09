@@ -20,9 +20,7 @@ const IndexPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <a
-                href={`http://${process.env.GATSBY_BLOG_URL}`}
-                rel="noreferrer noopener">
+            <a href={process.env.GATSBY_BLOG_URL} rel="noreferrer noopener">
                 Go to Blog
             </a>
         </div>
