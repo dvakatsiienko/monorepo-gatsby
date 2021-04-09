@@ -4,7 +4,7 @@ import ShoppingItem from './shoppingItem';
 
 describe('ShoppingItem component', () => {
     const mockProps = {
-        pathContext: {
+        pageContext: {
             data: {
                 title: 'mock title',
                 content: 'mock content',

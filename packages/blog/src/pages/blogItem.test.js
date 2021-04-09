@@ -6,7 +6,7 @@ import BlogItem from './blogItem';
 
 describe('Layout component', () => {
     const mockProps = {
-        pathContext: {
+        pageContext: {
             data: {
                 title: 'mock title',
                 content: 'mock content',
