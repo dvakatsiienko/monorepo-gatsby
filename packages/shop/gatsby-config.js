@@ -4,15 +4,11 @@ const dotenv = require('dotenv');
 const activeEnv =
     process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
-dotenv.config({ path: `.env.${activeEnv}` });
-dotenv.config({ path: '../../.env' });
-
-console.log('Shop', activeEnv);
-console.log('Shop', process.env.EDUSSON_URL);
+dotenv.config({ path: `../../.env.${activeEnv}` });
 
 module.exports = {
     siteMetadata: {
-        title: 'Shop',
+        title: 'Edusson',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
