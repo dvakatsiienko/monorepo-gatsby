@@ -5,7 +5,8 @@
     "scripts": {
         "dev": "gatsby develop -p 8001",
         "start": "gatsby serve -p 9001",
-        "build": "gatsby build"
+        "build": "gatsby build",
+        "test": "jest test --config ../../jest-config.json"
     },
     "dependencies": {
         "@gatsby-monorepo/shared-ui": "0.0.1",
