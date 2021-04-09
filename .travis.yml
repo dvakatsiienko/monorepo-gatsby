@@ -19,11 +19,10 @@ script:
     - cd $PACKAGE_LOCATION
     - yarn test
     - yarn build
-
-deploy:
-    provider: script
-    script: vercel public --token $VERCEL_TOKEN
-    skip_cleanup: true
-    app: $PACKAGE_NAME
-    on:
-        branch: main
+# deploy:
+#     provider: script
+#     script: vercel public --token $VERCEL_TOKEN
+#     skip_cleanup: true
+#     app: $PACKAGE_NAME
+#     on:
+#         branch: main

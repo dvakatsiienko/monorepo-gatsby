@@ -9,7 +9,7 @@ const PaperdonPage = ({ data }) => {
 
     return (
         <div>
-            <h1>Paperdon: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
+            <h1>Paperdon page: {process.env.GATSBY_GLOBAL_ENV_VAR}</h1>
             <ItemCardWrapper>
                 {edges &&
                     edges.map(edge => (
@@ -20,7 +20,7 @@ const PaperdonPage = ({ data }) => {
                         />
                     ))}
             </ItemCardWrapper>
-            <a href={process.env.GATSBY_SHOP_URL} rel="noreferrer noopener">
+            <a href={process.env.EDUSSON_URL} rel="noreferrer noopener">
                 Go to Edusson
             </a>
         </div>

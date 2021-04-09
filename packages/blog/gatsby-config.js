@@ -8,7 +8,7 @@ dotenv.config({ path: `.env.${activeEnv}` });
 dotenv.config({ path: '../../.env' });
 
 console.log('Blog', activeEnv);
-console.log('Blog', process.env.GATSBY_BLOG_URL);
+console.log('Blog', process.env.PAPERDON_URL);
 
 module.exports = {
     siteMetadata: {

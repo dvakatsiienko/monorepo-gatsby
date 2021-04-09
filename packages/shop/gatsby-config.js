@@ -8,7 +8,7 @@ dotenv.config({ path: `.env.${activeEnv}` });
 dotenv.config({ path: '../../.env' });
 
 console.log('Shop', activeEnv);
-console.log('Shop', process.env.GATSBY_SHOP_URL);
+console.log('Shop', process.env.EDUSSON_URL);
 
 module.exports = {
     siteMetadata: {
